@@ -9,6 +9,8 @@ type Props = {
 	websiteUrl?: string;
 	websiteLabel?: string;
 	websiteNote?: ReactNode;
+	tags?: string[];
+	leftExtra?: ReactNode;
 	className?: string;
 };
 
@@ -18,6 +20,8 @@ export default function WorkLeftContent({
 	websiteUrl,
 	websiteLabel,
 	websiteNote,
+	tags,
+	leftExtra,
 	className,
 }: Props) {
 	const hasWebsite = !!websiteUrl && !!websiteLabel;
@@ -55,13 +59,28 @@ export default function WorkLeftContent({
 					)}
 				</div>
 
-				<div className='mt-1 h-4 text-xs opacity-70'>
+				<div className='mt-1 min-h-4 text-xs opacity-70'>
 					{websiteNote ? (
 						websiteNote
 					) : (
 						<span className='invisible select-none'>placeholder</span>
 					)}
 				</div>
+
+				{tags && tags.length > 0 ? (
+					<div className='mt-3 flex flex-wrap gap-2'>
+						{tags.map((tag) => (
+							<span
+								key={tag}
+								className='inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-0.5 text-[10px] leading-none font-medium tracking-wide text-white/80'
+							>
+								{tag}
+							</span>
+						))}
+					</div>
+				) : null}
+
+				{leftExtra ? <div className='mt-4'>{leftExtra}</div> : null}
 			</div>
 		</div>
 	);

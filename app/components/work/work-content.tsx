@@ -17,7 +17,16 @@ interface WorkContentProps {
 }
 
 export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
-	const { title, description, websiteUrl, websiteLabel: websiteLabelOverride, websiteNote, media } = work;
+	const {
+		title,
+		description,
+		websiteUrl,
+		websiteLabel: websiteLabelOverride,
+		websiteNote,
+		tags,
+		leftExtra,
+		media,
+	} = work;
 	const isIntroEmoji = media.kind === 'emoji';
 	const is2k13Video = media.kind === 'video' && media.src.includes('2k13js');
 	const isSolvelyVideo = media.kind === 'video' && media.src.includes('solvely.mov');
@@ -97,6 +106,8 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 					websiteUrl={websiteUrl}
 					websiteLabel={websiteLabel}
 					websiteNote={websiteNote}
+					tags={tags}
+					leftExtra={leftExtra}
 				/>
 			</WorkLeft>
 			<WorkRight
