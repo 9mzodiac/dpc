@@ -111,9 +111,6 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 							? 'h-full w-full'
 							: classNames(
 									'drop-shadow-2xl',
-									// The default top margin is great for large hero media, but it can push shorter
-									// videos below the fold and get them clipped by the viewport.
-									is2k13Video ? 'sm:mt-6 md:mt-10 lg:mt-0' : 'sm:mt-10 md:mt-24',
 								)
 					}
 				>
