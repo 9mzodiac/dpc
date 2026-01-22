@@ -1,5 +1,5 @@
 {
-  "name": "dalelarroder.com",
+  "name": "danielchristopher.com",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
     "@types/react": "19.2.6",
     "@vercel/analytics": "1.5.0",
     "@vercel/speed-insights": "^1.0.2",
+    "bun": "^1.3.6",
     "classnames": "2.5.1",
     "date-fns": "^4.1.0",
     "gsap": "3.13.0",

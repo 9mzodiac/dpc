@@ -9,10 +9,15 @@ export function WorkLeft({ children, progress }: WorkProps) {
 
 	return (
 		<div
-			className='flex h-[30vh] flex-col items-center justify-center text-3xl lg:h-auto lg:text-3xl'
+			// Important: don't horizontally center based on content width (causes left-edge shifting
+			// between tiles when labels/links change). Instead, always reserve a consistent width
+			// and center that fixed-width column.
+			className='flex h-[30vh] flex-col justify-center text-3xl lg:h-auto lg:text-3xl'
 			style={{ transform: `translateY(${translateY}px)` }}
 		>
-			<div className='leading-10 text-white'>{children}</div>
+			<div className='w-full px-10 md:px-14 lg:px-0'>
+				<div className='mx-auto w-full max-w-[32rem] leading-10 text-white'>{children}</div>
+			</div>
 		</div>
 	);
 }

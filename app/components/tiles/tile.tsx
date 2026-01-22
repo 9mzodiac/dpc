@@ -26,7 +26,9 @@ export const Tile = ({ page, children }: TileProps) => {
 			className='absolute top-0 w-full'
 			style={{
 				opacity,
-				pointerEvents: progress >= 0 || progress >= 1 ? 'none' : undefined,
+				// Only allow interaction for the active tile (progress is in (0, 1)).
+				// All other tiles should not capture clicks, even if they're visually faded/hidden.
+				pointerEvents: progress > 0 && progress < 1 ? 'auto' : 'none',
 			}}
 		>
 			{cloneElement(children, {

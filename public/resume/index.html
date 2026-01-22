@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Resume</title>
+		<meta name="robots" content="noindex" />
+		<style>
+			:root {
+				color-scheme: light dark;
+			}
+			body {
+				font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+					Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+				line-height: 1.45;
+				margin: 0;
+				padding: 48px 20px;
+				display: flex;
+				justify-content: center;
+				background: Canvas;
+				color: CanvasText;
+			}
+			main {
+				width: min(900px, 100%);
+			}
+			header {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 12px;
+				flex-wrap: wrap;
+				border-bottom: 1px solid color-mix(in oklab, CanvasText 20%, Canvas);
+				padding-bottom: 16px;
+				margin-bottom: 20px;
+			}
+			h1 {
+				font-size: 28px;
+				margin: 0;
+				letter-spacing: -0.02em;
+			}
+			.small {
+				opacity: 0.8;
+				font-size: 14px;
+			}
+			.actions {
+				display: flex;
+				gap: 10px;
+				align-items: center;
+			}
+			a {
+				color: inherit;
+				text-decoration: underline;
+				text-underline-offset: 3px;
+			}
+			section {
+				margin: 18px 0;
+			}
+			h2 {
+				font-size: 16px;
+				margin: 0 0 8px 0;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				opacity: 0.75;
+			}
+			ul {
+				margin: 8px 0 0 18px;
+				padding: 0;
+			}
+			@media print {
+				body {
+					padding: 0;
+				}
+				.actions {
+					display: none;
+				}
+				a {
+					text-decoration: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<div>
+					<h1>Resume</h1>
+					<div class="small">Tip: use your browser’s print dialog to “Save as PDF”.</div>
+				</div>
+				<div class="actions">
+					<a href="/" rel="noreferrer">Back to site</a>
+					<a href="javascript:window.print()" rel="noreferrer">Print</a>
+				</div>
+			</header>
+			<section>
+				<h2>About</h2>
+				<p class="small">
+					Replace this content with your actual resume. This page is a static file served from
+					<code>public/resume/index.html</code>, so it opens at <code>/resume</code> in a new tab.
+				</p>
+			</section>
+			<section>
+				<h2>Experience</h2>
+				<ul>
+					<li>Add your roles, companies, and impact here.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Skills</h2>
+				<ul>
+					<li>Add your core technologies and strengths here.</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

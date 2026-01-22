@@ -1,4 +1,3 @@
-import Contact from './components/contact';
 import Hero from './components/hero/hero';
 import Intro from './components/intro';
 import { ScrollProvider } from './components/providers/ScrollProvider';
@@ -9,8 +8,9 @@ export default function Home() {
 		<ScrollProvider>
 			<Hero />
 			<Intro />
-			<Works />
-			<Contact />
+			<section id='work' className='scroll-mt-24'>
+				<Works />
+			</section>
 		</ScrollProvider>
 	);
 }

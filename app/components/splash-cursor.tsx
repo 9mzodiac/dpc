@@ -1224,17 +1224,17 @@ function SplashCursor({
 
 		function generateColor() {
 			if (usePrimaryColors) {
-				// Primary color palette
+				// Terminal-green palette (subtle by design; final intensity is controlled below)
 				const primaryColors = [
-					{ r: 0xfd / 255, g: 0xd1 / 255, b: 0xd9 / 255 }, // #fdd1d9
-					{ r: 0xfb / 255, g: 0xa4 / 255, b: 0xbc / 255 }, // #fba4bc
-					{ r: 0xf5 / 255, g: 0x75 / 255, b: 0xa5 / 255 }, // #f575a5
-					{ r: 0xeb / 255, g: 0x51 / 255, b: 0x9b / 255 }, // #eb519b
-					{ r: 0xde / 255, g: 0x1d / 255, b: 0x8d / 255 }, // #de1d8d
-					{ r: 0xbe / 255, g: 0x15 / 255, b: 0x88 / 255 }, // #be1588
-					{ r: 0x9f / 255, g: 0x0e / 255, b: 0x7f / 255 }, // #9f0e7f
-					{ r: 0x80 / 255, g: 0x09 / 255, b: 0x72 / 255 }, // #800972
-					{ r: 0x6a / 255, g: 0x05 / 255, b: 0x68 / 255 }, // #6a0568
+					{ r: 0xe6 / 255, g: 0xff / 255, b: 0xf2 / 255 }, // #e6fff2
+					{ r: 0xa7 / 255, g: 0xf3 / 255, b: 0xd0 / 255 }, // #a7f3d0
+					{ r: 0x6e / 255, g: 0xe7 / 255, b: 0xb7 / 255 }, // #6ee7b7
+					{ r: 0x34 / 255, g: 0xd3 / 255, b: 0x99 / 255 }, // #34d399
+					{ r: 0x22 / 255, g: 0xc5 / 255, b: 0x5e / 255 }, // #22c55e
+					{ r: 0x16 / 255, g: 0xa3 / 255, b: 0x4a / 255 }, // #16a34a
+					{ r: 0x05 / 255, g: 0x9f / 255, b: 0x5e / 255 }, // #059f5e
+					{ r: 0x06 / 255, g: 0x84 / 255, b: 0x45 / 255 }, // #068445
+					{ r: 0x04 / 255, g: 0x61 / 255, b: 0x2b / 255 }, // #04612b
 				];
 
 				// Select a random color from the palette

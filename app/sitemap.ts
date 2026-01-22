@@ -1,6 +1,6 @@
 import { getPosts } from './thoughts/utils';
 
-export const baseUrl = 'https://dalelarroder.com';
+export const baseUrl = 'https://danielchristopher.com';
 
 export default async function sitemap() {
 	const blogs = getPosts().map((post) => ({

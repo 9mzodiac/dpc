@@ -51,21 +51,19 @@ export default function Intro() {
 						className='intro-text'
 						style={{ opacity: opacityForBlock(progress, 0) }}
 					>
-						I love coding.
+						I'm a builder.
 					</div>
 					<span
 						className="intro-text inline-block after:content-['_']"
 						style={{ opacity: opacityForBlock(progress, 1) }}
 					>
-						I use my passion and skills to build digital products and
-						experiences.
+						I experiment a lot.
 					</span>
 					<span
 						className='intro-text inline-block'
 						style={{ opacity: opacityForBlock(progress, 2) }}
 					>
-						I&apos;m passionate about cutting-edge, pixel perfect UI and
-						intuitively implemented UX.
+						I&apos;m most passionate about building things that help people.
 					</span>
 				</div>
 			</div>
