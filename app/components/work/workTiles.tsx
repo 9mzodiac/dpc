@@ -5,6 +5,7 @@ export type WorkTile = {
 	title: string;
 	description: string;
 	websiteUrl?: string;
+	titleSubtext?: ReactNode;
 	websiteNote?: ReactNode;
 	tags?: string[];
 	leftExtra?: ReactNode;
@@ -76,15 +77,20 @@ export const workTiles: WorkTile[] = [
 		},
 	},
 	{
-		description: 'I built',
+		description: "I'm building",
 		title: 'NXTBEAT',
 		websiteUrl: 'https://nxtbeatapp.live',
 		websiteNote: (
-			<span className='inline-flex items-center gap-1 rounded-full border border-emerald-300/35 bg-emerald-300/15 px-3 py-1 text-[11px] leading-none font-semibold text-emerald-100 shadow-[0_0_0_1px_rgba(110,231,183,0.08)]'>
-				🕸️ Web3 Project
-			</span>
+			<div className='flex flex-wrap items-center gap-x-2 gap-y-3'>
+				<span className='inline-flex items-center gap-1 rounded-full border border-emerald-300/35 bg-emerald-300/15 px-3 py-1 text-[11px] leading-none font-semibold text-emerald-100 shadow-[0_0_0_1px_rgba(110,231,183,0.08)]'>
+					🕸️ Web3 Project
+				</span>
+				<span className='inline-flex items-center gap-1 rounded-full border border-cyan-300/35 bg-cyan-300/15 px-3 py-1 text-[11px] leading-none font-semibold text-cyan-100 shadow-[0_0_0_1px_rgba(103,232,249,0.08)]'>
+					⚡ Powered by Hypercore
+				</span>
+			</div>
 		),
-		tags: ['React Native', 'Expo', 'Spring Boot', 'Solana'],
+		tags: ['React Native', 'Expo', 'Hyperswarm', 'Hypercore'],
 		media: {
 			kind: 'video',
 			// File has a space; URL-encode it so it resolves correctly.
@@ -117,6 +123,39 @@ export const workTiles: WorkTile[] = [
 	},
 	{
 		description: 'I built',
+		title: 'Junto',
+		websiteUrl:
+			'https://www.kickstarter.com/projects/junto-app/junto-a-new-breed-of-social-media',
+		titleSubtext: (
+			<a
+				href='https://fluxsocial.io'
+				target='_blank'
+				rel='noreferrer'
+				className='underline underline-offset-4 opacity-80 hover:opacity-100'
+			>
+				Now Flux
+			</a>
+		),
+		websiteNote: (
+			<div className='flex flex-wrap items-center gap-x-2 gap-y-3'>
+				<span className='inline-flex items-center gap-1 rounded-full border border-fuchsia-400/35 bg-fuchsia-400/15 px-3 py-1 text-[11px] leading-none font-semibold text-fuchsia-200 shadow-[0_0_0_1px_rgba(232,121,249,0.08)]'>
+					🚀 Funded on Kickstarter
+				</span>
+				<span className='inline-flex items-center gap-1 rounded-full border border-cyan-300/35 bg-cyan-300/15 px-3 py-1 text-[11px] leading-none font-semibold text-cyan-100 shadow-[0_0_0_1px_rgba(103,232,249,0.08)]'>
+					🧬 First Holochain mobile app
+				</span>
+			</div>
+		),
+		tags: ['iOS SDK', 'Holochain', 'P2P'],
+		media: {
+			kind: 'video',
+			src: '/static/images/project/flux.mp4',
+			width: 1952,
+			height: 1230,
+		},
+	},
+	{
+		description: 'I built',
 		title: 'Flowell',
 		websiteUrl:
 			'https://uploads-ssl.webflow.com/62c1f253f3ee583d7b8f2427/62d0f3ca6e8bedc1ca108583_Flowell%20Lite%20Paper%20_%20Mobile%20App.pdf',
@@ -140,29 +179,6 @@ export const workTiles: WorkTile[] = [
 					height: 554,
 				},
 			],
-		},
-	},
-	{
-		description: `I built`,
-		title: 'Junto',
-		websiteUrl:
-			'https://www.kickstarter.com/projects/junto-app/junto-a-new-breed-of-social-media',
-		websiteNote: (
-			<div className='flex flex-wrap items-center gap-x-2 gap-y-3'>
-				<span className='inline-flex items-center gap-1 rounded-full border border-fuchsia-400/35 bg-fuchsia-400/15 px-3 py-1 text-[11px] leading-none font-semibold text-fuchsia-200 shadow-[0_0_0_1px_rgba(232,121,249,0.08)]'>
-					🚀 Funded on Kickstarter
-				</span>
-				<span className='inline-flex items-center gap-1 rounded-full border border-cyan-300/35 bg-cyan-300/15 px-3 py-1 text-[11px] leading-none font-semibold text-cyan-100 shadow-[0_0_0_1px_rgba(103,232,249,0.08)]'>
-					🧬 First Holochain mobile app
-				</span>
-			</div>
-		),
-		tags: ['iOS SDK', 'Holochain', 'P2P'],
-		media: {
-			kind: 'video',
-			src: '/static/images/project/flux.mp4',
-			width: 1952,
-			height: 1230,
 		},
 	},
 	/*

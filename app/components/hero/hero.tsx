@@ -259,7 +259,7 @@ export default function Hero() {
 
 									<section className='mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-mono'>
 										<div className='flex items-center gap-2'>
-											<Link
+											{/* <Link
 												href='https://linkedin.com/in/daniel-c-a178bb3a7'
 												target='_blank'
 												rel='noreferrer'
@@ -272,7 +272,7 @@ export default function Hero() {
 												style={{ transitionDelay: revealIcons ? '0ms' : '0ms' }}
 											>
 												<LinkedinIcon className='h-8 w-8' />
-											</Link>
+											</Link> */}
 											<Link
 												href='https://github.com/9mzodiac'
 												target='_blank'

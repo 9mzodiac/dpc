@@ -7,6 +7,7 @@ type Props = {
 	description: string;
 	title: string;
 	websiteUrl?: string;
+	titleSubtext?: ReactNode;
 	websiteNote?: ReactNode;
 	tags?: string[];
 	leftExtra?: ReactNode;
@@ -17,6 +18,7 @@ export default function WorkLeftContent({
 	description,
 	title,
 	websiteUrl,
+	titleSubtext,
 	websiteNote,
 	tags,
 	leftExtra,
@@ -24,6 +26,7 @@ export default function WorkLeftContent({
 }: Props) {
 	const hasWebsite = !!websiteUrl;
 	const hasWebsiteNote = !!websiteNote;
+	const hasTitleSubtext = !!titleSubtext;
 
 	return (
 		<div className={classNames('w-full max-w-[32rem]', className)}>
@@ -52,8 +55,17 @@ export default function WorkLeftContent({
 				)}
 			</div>
 
+			{hasTitleSubtext ? (
+				<div
+					className='text-xs md:text-sm font-mono text-white/70'
+					style={{ marginTop: 10, marginBottom: 6 }}
+				>
+					{titleSubtext}
+				</div>
+			) : null}
+
 			{hasWebsiteNote ? (
-				<div className='text-xs leading-snug' style={{ marginTop: 14 }}>
+				<div className='text-xs leading-snug' style={{ marginTop: hasTitleSubtext ? 10 : 14 }}>
 					{typeof websiteNote === 'string' ? (
 						<span className='opacity-70'>{websiteNote}</span>
 					) : (
@@ -65,7 +77,7 @@ export default function WorkLeftContent({
 			{tags && tags.length > 0 ? (
 				<div
 					className='flex flex-wrap gap-x-2 gap-y-3'
-					style={{ marginTop: hasWebsiteNote ? 18 : 14 }}
+					style={{ marginTop: hasWebsiteNote ? 18 : hasTitleSubtext ? 14 : 14 }}
 				>
 					{tags.map((tag) => (
 						<span

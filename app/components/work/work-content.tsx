@@ -21,6 +21,7 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 		title,
 		description,
 		websiteUrl,
+		titleSubtext,
 		websiteNote,
 		tags,
 		leftExtra,
@@ -97,6 +98,7 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 					description={description}
 					title={title}
 					websiteUrl={websiteUrl}
+					titleSubtext={titleSubtext}
 					websiteNote={websiteNote}
 					tags={tags}
 					leftExtra={leftExtra}
