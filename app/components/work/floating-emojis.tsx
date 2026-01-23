@@ -29,9 +29,14 @@ export default function FloatingEmojis({
 			emoji: pick(emojis),
 			leftPct: Math.random() * 100,
 			sizePx: 14 + Math.random() * 18,
-			durationSec: 5 + Math.random() * 6,
-			delaySec: Math.random() * 4,
+			// Slower animation => fewer "spawns" per unit time.
+			durationSec: 9 + Math.random() * 9,
+			// Start each particle at a different phase so they don't "spawn" in sync.
+			delaySec: 0, // assigned below
 			rotateDeg: (Math.random() * 140 - 70) | 0,
+		})).map((p) => ({
+			...p,
+			delaySec: -Math.random() * p.durationSec,
 		}));
 	}, [count, emojis]);
 

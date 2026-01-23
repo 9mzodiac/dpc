@@ -32,7 +32,7 @@ export default function LogoMarquee({ items, className }: Props) {
 				{safe.map((item) => (
 					<div
 						key={item.name}
-						className='group relative flex flex-col rounded-xl border-2 border-black/10 bg-white/95 p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-xl dark:border-white/20 dark:bg-black/40 dark:backdrop-blur-sm'
+						className='group relative flex flex-col rounded-xl border-2 border-black/10 bg-white/95 p-5 shadow-lg transition-transform duration-300 hover:scale-[1.03] dark:border-white/20 dark:bg-black/40 dark:backdrop-blur-sm'
 						title={item.name}
 					>
 						{/* Decorative corner accent */}

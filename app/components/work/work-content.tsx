@@ -21,7 +21,6 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 		title,
 		description,
 		websiteUrl,
-		websiteLabel: websiteLabelOverride,
 		websiteNote,
 		tags,
 		leftExtra,
@@ -30,12 +29,6 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 	const isIntroEmoji = media.kind === 'emoji';
 	const is2k13Video = media.kind === 'video' && media.src.includes('2k13js');
 	const isSolvelyVideo = media.kind === 'video' && media.src.includes('solvely.mov');
-	const websiteLabel =
-		websiteLabelOverride ??
-		(websiteUrl?.includes('kickstarter.com') === true
-			? 'Kickstarter'
-			: websiteUrl?.replace(/^https?:\/\//, '') ?? '');
-
 	// Special-case: make the logos slide full-width (no split black/white background showing)
 	if (media.kind === 'logos') {
 		return (
@@ -104,7 +97,6 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 					description={description}
 					title={title}
 					websiteUrl={websiteUrl}
-					websiteLabel={websiteLabel}
 					websiteNote={websiteNote}
 					tags={tags}
 					leftExtra={leftExtra}
@@ -131,9 +123,18 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
 								emojis={['🚧', '⚠️', '🖥️', '🦺']}
 								count={14}
 							/>
-							<span className='relative z-10 select-none text-8xl md:text-9xl'>
-								{media.value}
-							</span>
+							<div className='relative z-10 flex flex-col items-center'>
+								<span className='select-none text-8xl md:text-9xl'>{media.value}</span>
+								<div className='mt-8 flex flex-col items-center gap-2 text-black/60'>
+									<span className='text-[12px] font-mono uppercase tracking-[0.35em]'>
+										scroll
+									</span>
+									<div className='flex flex-col items-center leading-none animate-bounce text-black/50'>
+										<span className='text-2xl leading-none'>↓</span>
+										<span className='-mt-2 text-2xl leading-none'>↓</span>
+									</div>
+								</div>
+							</div>
 						</div>
 					) : media.kind === 'image' ? (
 						<Image

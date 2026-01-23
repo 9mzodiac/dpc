@@ -12,7 +12,7 @@ export function WorkLeft({ children, progress }: WorkProps) {
 			// Important: don't horizontally center based on content width (causes left-edge shifting
 			// between tiles when labels/links change). Instead, always reserve a consistent width
 			// and center that fixed-width column.
-			className='flex h-[30vh] flex-col justify-center text-3xl lg:h-auto lg:text-3xl [--work-translate-multiplier:0] lg:[--work-translate-multiplier:1] [transform:translateY(calc(var(--work-translate-y)*var(--work-translate-multiplier)))]'
+			className='flex h-[34vh] flex-col justify-center text-3xl lg:h-auto lg:text-3xl [--work-translate-multiplier:0] lg:[--work-translate-multiplier:1] [transform:translateY(calc(var(--work-translate-y)*var(--work-translate-multiplier)))]'
 			// Disable the translateY animation on mobile (30vh header makes it look misaligned),
 			// but keep it on desktop for the intended motion feel.
 			style={{ ['--work-translate-y' as never]: `${translateY}px` }}
