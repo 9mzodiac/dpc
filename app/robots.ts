@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
 			userAgent: '*',
 			allow: '/',
 		},
-		sitemap: `https://danielchristopher.com/sitemap.xml`,
-		host: `https://danielchristopher.com`,
+		sitemap: `https://ibuildapps.live/sitemap.xml`,
+		host: `https://ibuildapps.live`,
 	};
 }

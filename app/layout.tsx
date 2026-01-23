@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 		default: 'Daniel Christopher',
 	},
 	description: 'I build things for the web.',
-	metadataBase: new URL('https://danielchristopher.com'),
+	metadataBase: new URL('https://ibuildapps.live'),
 };
 
 interface RootLayoutProps {

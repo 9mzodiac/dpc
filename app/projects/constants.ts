@@ -47,14 +47,14 @@ export const projects: Project[] = [
 		title: 'Mathgame',
 		src: 'mathgame.png',
 		color: '#ffedd5',
-		url: 'https://mathgame.danielchristopher.com/',
+		url: 'https://mathgame.ibuildapps.live/',
 		role: 'Frontend Developer',
 	},
 	{
 		title: 'Snakegame',
 		src: 'snakegame.png',
 		color: '#ecfccb',
-		url: 'https://snakegame.danielchristopher.com/',
+		url: 'https://snakegame.ibuildapps.live/',
 		role: 'Frontend Developer',
 	},
 ];

@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "danielchristopher.com",
+      "name": "ibuildapps.live",
       "dependencies": {
         "@octokit/graphql": "^9.0.0",
         "@radix-ui/react-tooltip": "1.2.8",

@@ -9,7 +9,7 @@ export async function generateMetadata(props: {
 	const params = await props.params;
 	const { metadata } = await getPostFromSlug(params.slug);
 
-	const url = `https://danielchristopher.com/thoughts/${params.slug}`;
+	const url = `https://ibuildapps.live/thoughts/${params.slug}`;
 	const ogImage = metadata.image || '/static/og-image.png';
 
 	return {
