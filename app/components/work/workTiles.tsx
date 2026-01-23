@@ -133,7 +133,7 @@ export const workTiles: WorkTile[] = [
 				href='https://fluxsocial.io'
 				target='_blank'
 				rel='noreferrer'
-				className='underline underline-offset-4 opacity-80 hover:opacity-100'
+				className='hidden lg:inline underline underline-offset-4 opacity-80 hover:opacity-100'
 			>
 				Now Flux
 			</a>
