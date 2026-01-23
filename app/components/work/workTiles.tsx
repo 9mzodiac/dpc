@@ -58,16 +58,18 @@ export const workTiles: WorkTile[] = [
 		description: `Here are things`,
 		title: `I've worked on`,
 		leftExtra: (
-			<div className='mt-6'>
+			<div className='mt-6 hidden lg:block'>
 				<div className='text-xs font-mono uppercase tracking-wider text-white/70'>
 					I build with these technologies:
 				</div>
-				<div className='mt-2 overflow-x-auto [-webkit-overflow-scrolling:touch] -mx-10 px-10 md:-mx-14 md:px-14 lg:mx-0 lg:px-0'>
-					<SkillIcons
-						src='https://skillicons.dev/icons?i=html,css,tailwind,js,nodejs,npm,vue,react,express,postgres,docker,aws,nginx,git,go,rust,activitypub,ableton,azure,cassandra,django,fediverse,figma,gradle,ipfs,java,kotlin,nestjs,raspberrypi,reactivex,redis,spring'
-						alt='Skills: HTML, CSS, Tailwind, JavaScript, Node.js, npm, Vue, React, Express, Postgres, Docker, AWS, Nginx, Git, Go, Rust, ActivityPub, Ableton, Azure, Cassandra, Django, Fediverse, Figma, Gradle, IPFS, Java, Kotlin, NestJS, Raspberry Pi, ReactiveX, Redis, Spring'
-						className='h-16 sm:h-18 md:h-20 w-max max-w-none opacity-95'
-					/>
+				<div className='mt-2 hidden lg:block'>
+					<div className='overflow-x-auto [-webkit-overflow-scrolling:touch]'>
+						<SkillIcons
+							src='https://skillicons.dev/icons?i=html,css,tailwind,js,nodejs,npm,vue,react,express,postgres,docker,aws,nginx,git,go,rust,activitypub,ableton,azure,cassandra,django,fediverse,figma,gradle,ipfs,java,kotlin,nestjs,raspberrypi,reactivex,redis,spring'
+							alt='Skills: HTML, CSS, Tailwind, JavaScript, Node.js, npm, Vue, React, Express, Postgres, Docker, AWS, Nginx, Git, Go, Rust, ActivityPub, Ableton, Azure, Cassandra, Django, Fediverse, Figma, Gradle, IPFS, Java, Kotlin, NestJS, Raspberry Pi, ReactiveX, Redis, Spring'
+							className='h-16 sm:h-18 md:h-20 w-max max-w-none opacity-95'
+						/>
+					</div>
 				</div>
 			</div>
 		),
