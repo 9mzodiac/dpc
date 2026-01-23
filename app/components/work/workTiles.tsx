@@ -62,7 +62,7 @@ export const workTiles: WorkTile[] = [
 				<div className='text-xs font-mono uppercase tracking-wider text-white/70'>
 					I build with these technologies:
 				</div>
-				<div className='mt-2 overflow-x-auto [-webkit-overflow-scrolling:touch]'>
+				<div className='mt-2 relative left-1/2 w-screen -translate-x-1/2 overflow-x-auto [-webkit-overflow-scrolling:touch] px-10 md:px-14 lg:left-0 lg:w-full lg:translate-x-0 lg:px-0'>
 					<SkillIcons
 						src='https://skillicons.dev/icons?i=html,css,tailwind,js,nodejs,npm,vue,react,express,postgres,docker,aws,nginx,git,go,rust,activitypub,ableton,azure,cassandra,django,fediverse,figma,gradle,ipfs,java,kotlin,nestjs,raspberrypi,reactivex,redis,spring'
 						alt='Skills: HTML, CSS, Tailwind, JavaScript, Node.js, npm, Vue, React, Express, Postgres, Docker, AWS, Nginx, Git, Go, Rust, ActivityPub, Ableton, Azure, Cassandra, Django, Fediverse, Figma, Gradle, IPFS, Java, Kotlin, NestJS, Raspberry Pi, ReactiveX, Redis, Spring'
