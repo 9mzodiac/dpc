@@ -1,4 +1,4 @@
-# danielchristopher.com ⚡️
+# ibuildapps.live ⚡️
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
@@ -49,14 +49,6 @@ SPOTIFY_CLIENT_ID=<Your env>
 bun run dev
 ```
 
-## Previous Version
+## License
 
-This is the second version of my website.
-
-Prevoius v1 version:
-
-- https://v1.danielchristopher.com/
-
-## Licence
-
-[MIT](https://github.com/dchristopher/danielchristopher/blob/master/LICENSE) © [Daniel Christopher](https://www.danielchristopher.com)
+[MIT](https://github.com/dchristopher/danielchristopher/blob/master/LICENSE) © [ibuildapps.live](https://www.ibuildapps.live)
